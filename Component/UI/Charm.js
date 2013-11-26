@@ -22,7 +22,7 @@
         this.events.listen('toggle', this.toggle.bind(this));
 
         $(document).on("mousemove", function (evt) {
-            if (evt.pageX > (document.width- 110)) {
+            if (evt.pageX > ($(document).width()- 110)) {
                 if(!self.isShown) self.show();
             }
         });

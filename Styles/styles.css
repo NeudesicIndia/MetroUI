@@ -210,7 +210,7 @@ ul, ol {
     width: 340px;
     background-color: #231f20;
     z-index: 1078;
-    padding: 2em 2em 2em 3em;
+    padding: 2em;
     -webkit-transition: all 0.2s ease-in-out 0s;
     -moz-transition: all 0.2s ease-in-out 0s;
     -o-transition: all 0.2s ease-in-out 0s;
@@ -240,6 +240,10 @@ ul, ol {
         -ms-transform: rotateY(0deg);
         -o-transform: rotateY(0deg);
         transform: rotateY(0deg);
+    }
+
+    .flyout h1 {
+        margin:0 0 0.5em;
     }
 
     .flyout a {
@@ -365,6 +369,12 @@ button {
     margin: 0;
     width: 100%;
     position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
     .charm-bar > ul li {
