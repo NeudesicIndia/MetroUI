@@ -1,4 +1,6 @@
-test
-====
+Metro UI
+=======
 
-test
+Neudesic Metro Component
+
+Demo: http://neudesicindia.github.io/MetroUI/

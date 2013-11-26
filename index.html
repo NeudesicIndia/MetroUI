@@ -1,9 +1,61 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-  <title>test</title>
+    <meta charset="utf-8" />
+    <title>Metro UI</title>
+    <link rel="stylesheet" href="Styles/styles.css" />
 </head>
 <body>
-  <h1>test</h1>
+    <div class="container">
+        <h1>Neudesic Metro Component</h1>
+        <section role="application" class="appbar-container hide">
+            <article id="CharmBar" class="charm-bar component" data-component="neu.metro.ui.Charm">
+                <!--<button class="scroll-btn scroll-top hide" data-direction="UP">Click to Scroll Up</button>-->
+                <ul>
+                    <li>
+                        <a href="#"><span class="ui-symbols"></span></a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="ui-symbols"></span></a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="ui-symbols"></span></a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="ui-symbols"></span></a>
+                    </li>
+                </ul>
+                <!--<button class="scroll-btn scroll-bottom" data-direction="down">Click to Scroll Down</button>-->
+            </article>
+        </section>
+        <button class="component" data-component="neu.metro.ui.TriggerComponent" data-from="click" data-to="show" data-target-component="#CharmBar">Show Charm <span class="ui-symbols"></span></button>
+        <br />
+        <br />
+
+        <section id="Flyout" class="flyout component " data-component="neu.metro.ui.Flyout">
+            <h1><a href="#" class="btn-icon component ui-symbols" data-component="neu.metro.ui.EventMapper" data-from="click" data-to="hide"></a>Flyout</h1>
+        </section>
+        <button class="component" data-component="neu.metro.ui.TriggerComponent" data-from="click" data-to="show" data-target-component="#Flyout">Show Flyout <span class="ui-symbols"></span></button>
+        <br />
+        <br />
+        <h2 class="component" data-component="neu.metro.ui.NetworkStatus" data-target="#NetworkStat">Network: <span id="NetworkStat"><span class="ui-symbols online"></span> <span class="ui-symbols offline"></span></span></h2>
+    </div>
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Core -->
+    <script src="Component/Core/Namespace.js"></script>
+    <script src="Component/Core/Component.js"></script>
+    <script src="Component/Core/Events.js"></script>
+    <script src="Component/Core/EventMapper.js"></script>
+    <script src="Component/Core/Controller.js"></script>
+
+    <!-- UI  -->
+    <script src="Component/UI/Flyout.js"></script>
+    <script src="Component/UI/NetworkStatus.js"></script>
+    <script src="Component/UI/TriggerComponent.js"></script>
+    <script src="Component/UI/Charm.js"></script>
 </body>
 </html>
