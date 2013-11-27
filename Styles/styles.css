@@ -394,3 +394,22 @@ button {
     .charm-bar > ul li a:focus {
         color:#fff;
     }
+
+
+[role="contentinfo"] {
+	display:block;
+	position:absolute;
+	left:0;
+	bottom:0;
+	right:0;
+	height:80px;
+	padding:0 100px;
+}
+	
+.btn {
+	border: 1px solid #ccc;
+	padding: 10px 30px;
+	display: inline-block;
+	background: #ddd;
+	color: #000;
+}
